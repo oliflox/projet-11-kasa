@@ -4,11 +4,52 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin:var(--padding-header) var(--margin);
+    margin: var(--spacing-4xl) var(--spacing-body); 
 }
 
 .header-nav{
     list-style: none;
     display: flex;
-    gap: 60px;
+    align-items: center; 
+    gap: var(--spacing-5xl);
+    height: var(--full);
+} 
+
+.banner{
+    margin: 0 var(--spacing-body);
+    border-radius: var(--boldRadius);
+    background-image: url('%PUBLIC_URL%/img/banner-background.jpg');
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding:var(--spacing-7xl) 0;
+    
+}
+
+.banner-title{
+    font-size: var(--font-size-title);
+    font-family: var(--font-title);
+    font-weight: var(--bold);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6xl); 
+    margin: var(--spacing-4xl) var(--spacing-body); 
+    background-color: lightgray;
+    padding: var(--spacing-5xl);
+    border-radius: var(--boldRadius);
+}
+
+.gallery-card{
+    background-color: var(--primary); 
+    border-radius: var(--lightRadius);
+    padding: var(--spacing-lg);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+    color: var(--white);
+    font-weight: var(--bold);
+    fon
 }
