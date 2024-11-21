@@ -2,10 +2,10 @@ import Logo from "./Logo";
 
 export default function Header() {
     return (
-        <header class="header">
+        <header className="header">
           <Logo />
-          <nav >
-              <ul class="header-nav">
+          <nav>
+              <ul className="header-nav">
               <li>
                   <a href="/">Accueil</a>
               </li>

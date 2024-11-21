@@ -1,7 +1,7 @@
 
 export default function GalleryCard() {
     return (
-        <section class="gallery-card"> 
+        <section className="gallery-card"> 
             <p>GalleryCard</p>
         </section>
     )

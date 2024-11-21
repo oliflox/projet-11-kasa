@@ -19,6 +19,7 @@
     margin: 0 var(--spacing-body);
     border-radius: var(--boldRadius);
     background-image: url('%PUBLIC_URL%/img/banner-background.jpg');
+    background-color: var(--black); 
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -28,7 +29,6 @@
 
 .banner-title{
     font-size: var(--font-size-title);
-    font-family: var(--font-title);
     font-weight: var(--bold);
 }
 
@@ -51,5 +51,4 @@
     align-items: flex-end;
     color: var(--white);
     font-weight: var(--bold);
-    fon
 }
