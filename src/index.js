@@ -5,9 +5,14 @@ import router from './routes';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const App = () => {
+  return <RouterProvider router={router} />
+}
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App/>
   </React.StrictMode>
 );
 
