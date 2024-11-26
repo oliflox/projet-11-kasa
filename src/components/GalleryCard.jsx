@@ -1,9 +1,12 @@
+export default function GalleryCard({ title, cover }) {
 
-export default function GalleryCard() {
     return (
         <section className="gallery-card"> 
-            <p>GalleryCard</p>
+        <img className="gallery-card__img" src={cover} alt={title}/>
+        <div className="gallery-card__overlay">
+            <h2 className="gallery-card__title">{title}</h2>
+        </div>
+            
         </section>
-    )
-
+    );
 }
