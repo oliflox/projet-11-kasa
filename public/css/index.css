@@ -28,6 +28,7 @@
     padding: var(--spacing-7xl) 0;
     position: relative;
     overflow: hidden;
+    min-height: 11.25rem;
 }
 
 .banner::before {

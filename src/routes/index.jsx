@@ -5,9 +5,8 @@ import Layout from "../components/Layout";
 export default function Index() {
     return (
       <Layout>
-        <Banner />
+        <Banner link='banner-background-index.jpg' title="Chez vous, partout et ailleurs" />
         <Gallery />
       </Layout>
     );
   }
-  
