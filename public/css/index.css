@@ -28,7 +28,6 @@
     padding: var(--spacing-7xl) 0;
     position: relative;
     overflow: hidden;
-    min-height: 11.25rem;
 }
 
 .banner::before {
@@ -102,28 +101,81 @@
     gap: var(--spacing-xl);
 }
 
-.logement-tags__container{
+.logement-tags__container {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
 }
 
-.logement-tags{
+.logement-tags {
     background-color: var(--primary);
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--boldRadius);
-    color: var(--white); 
+    color: var(--white);
     font-weight: var(--bold);
 }
 
-.E404-container{
-display: flex;
-flex-direction: column;
-align-items: center;
+.E404-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.E404-title{
+.E404-title {
     color: var(--primary);
-    font-size: var(--E404-font-size); 
+    font-size: var(--E404-font-size);
     font-weight: var(--bold);
+}
+
+.collapse {
+    background-color: var(--lightgray);
+    border-radius: var(--lightRadius);
+    margin: var(--spacing-2xl) 0;
+}
+
+
+.collapse-button {
+    background-color: var(--primary);
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--bold);
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--lightRadius);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.collapse-content {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 415px;
+    position: relative;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--lightRadius);
+}
+
+.btn {
+    /* color: var(--white); */
+    background-color: transparent;
+    font-size: var(--spacing-7xl);
+    border: none;
+    cursor: pointer;
 }

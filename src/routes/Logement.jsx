@@ -5,6 +5,7 @@ import Collapse from "../components/Collapse";
 
 import { useLogement } from "../hooks/useLogement";
 import { useLocation, Navigate } from "react-router-dom";
+import Carousel from "../components/Carousel";
 
 export default function Logement() {
   const location = useLocation();
@@ -16,7 +17,7 @@ export default function Logement() {
     <Layout>
       {logement ? (
         <>
-          <img src={logement.cover} alt={logement.title} />
+          <Carousel logement={logement} />
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
           <HostProfile host={logement.host} />
