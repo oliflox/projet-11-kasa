@@ -202,7 +202,6 @@
     align-items: center;
     height: 415px;
     position: relative;
-
 }
 
 .carousel-item {
@@ -218,11 +217,20 @@
 }
 
 .btn {
-    /* color: var(--white); */
+    color: var(--white);
     background-color: transparent;
     font-size: var(--spacing-7xl);
     border: none;
     cursor: pointer;
+    position: absolute;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
 }
 
 .about-collapse-container {
