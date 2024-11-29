@@ -6,7 +6,7 @@ export default function Stars({ rating }) {
           <span
             className="stars"
             style={{
-              color: rating >= star ? "var(--primary)" : "var(--lightGray)",
+              color: rating >= star ? "var(--primary)" : "var(--lightgray)",
               fontSize: `35px`,
             }}
           >

@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
 
     --white: #fff;
     --black: #000;
-    --primary:#FF6060;
-    --lightGray:#E3E3E3;
+    --primary: #FF6060;
+    --lightgray: #E3E3E3;
 
     --lightRadius: .75rem;
     --boldRadius: 1.5rem;
     --fullRadius: 100%;
 
     --font-size-title: 3rem;
-    --font-size-subtitle:1.5rem;
-    --font-size:16px;
+    --font-size-subtitle: 1.5rem;
+    --font-size: 16px;
 
     --E404-font-size: 18rem;
 
-    --font-title:"Montserrat", sans-serif;
+    --font-title: "Montserrat", sans-serif;
 
-    --full:100%;
+    --full: 100%;
 
     --bold: 700;
     --lightbold: 500;
@@ -31,14 +31,15 @@
     --spacing-sm: 0.75rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.25rem;
-    --spacing-xl: 1.5rem; 
+    --spacing-xl: 1.5rem;
     --spacing-2xl: 2rem;
     --spacing-3xl: 2.5rem;
     --spacing-4xl: 3rem;
     --spacing-5xl: 3.5rem;
-    --spacing-6xl:3.75rem;
+    --spacing-6xl: 3.75rem;
     --spacing-7xl: 4rem;
     --spacing-8xl: 5rem;
-    
+
     --spacing-body: 100px;
+    --spacing-collapse: 200px;
 }
