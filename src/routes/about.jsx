@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout>
       <Banner link="banner-background-about.jpg" title="" height="14rem" />
-      <section className="collapse-container">
+      <section className="about-collapse-container">
         <Collapse
           title="Fiabilité"
           children={

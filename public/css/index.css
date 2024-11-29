@@ -16,7 +16,7 @@
 }
 
 .banner {
-    margin: 0 var(--spacing-body);
+
     border-radius: var(--boldRadius);
     background-image: url('../img/banner-background.jpg');
     background-position: center;
@@ -52,7 +52,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-6xl);
-    margin: var(--spacing-4xl) var(--spacing-body);
+    margin: var(--spacing-4xl) 0;
     background-color: lightgray;
     padding: var(--spacing-5xl);
     border-radius: var(--boldRadius);
@@ -127,13 +127,6 @@
     font-weight: var(--bold);
 }
 
-.collapse {
-    background-color: var(--lightgray);
-    border-radius: var(--lightRadius);
-    margin: var(--spacing-2xl) 0;
-}
-
-
 .collapse-button {
     background-color: var(--primary);
     width: 100%;
@@ -148,8 +141,59 @@
     padding: var(--spacing-sm) var(--spacing-md);
 }
 
+.collapse--open {
+    background-color: var(--lightgray);
+    border-radius: var(--lightRadius);
+}
+
 .collapse-content {
     padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.logement-info,
+.logement-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+}
+
+.logement-title {
+    font-size: var(--font-size-semititle);
+    font-weight: var(--lightbold);
+    color: var(--primary);
+}
+
+.logement-location {
+    font-weight: var(--lightbold);
+}
+
+.logement-collapse-container {
+    display: flex;
+    margin: var(--spacing-2xl) 0;
+    gap: var(--spacing-7xl);
+}
+
+.logement-collapse-container>.collapse {
+    width: 50%;
+}
+
+.host-profile {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.host-name {
+    color: var(--primary);
+    font-weight: var(--lightbold);
+}
+
+.host-img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 .carousel-container {
@@ -158,6 +202,7 @@
     align-items: center;
     height: 415px;
     position: relative;
+
 }
 
 .carousel-item {
@@ -178,4 +223,11 @@
     font-size: var(--spacing-7xl);
     border: none;
     cursor: pointer;
+}
+
+.about-collapse-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    margin: var(--spacing-4xl) 0;
 }

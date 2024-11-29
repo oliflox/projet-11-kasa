@@ -18,18 +18,25 @@ export default function Logement() {
       {logement ? (
         <>
           <Carousel logement={logement} />
-          <h1>{logement.title}</h1>
-          <p>{logement.location}</p>
-          <HostProfile host={logement.host} />
-          <Stars rating={logement.rating} />
-          <div className="logement-tags__container">
-            {logement.tags.map((tag) => (
-              <span className="logement-tags" key={tag}>
-                {tag}
-              </span>
-            ))}
-          </div>
-          <section className="collapse-container">
+          <section className="logement-details">
+            <div className="logement-header">
+              <h1 className="logement-title">{logement.title}</h1>
+              <p className="logement-location">{logement.location}</p>
+            </div>
+            <HostProfile host={logement.host} />
+          </section>
+          <section className="logement-info">
+            <div className="logement-tags__container">
+              {logement.tags.map((tag) => (
+                <span className="logement-tags" key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <Stars rating={logement.rating} />
+          </section>
+
+          <section className="logement-collapse-container">
             <Collapse
               title="Description"
               children={logement.description}

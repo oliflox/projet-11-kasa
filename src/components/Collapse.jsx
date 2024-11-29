@@ -4,7 +4,7 @@ export default function Collapse({ children, title }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? "collapse--open" : ""}`}>
       <button className="collapse-button" onClick={() => setIsOpen(!isOpen)}>
         {title}
         {isOpen ? (
