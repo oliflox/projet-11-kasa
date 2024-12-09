@@ -3,6 +3,7 @@ export default function GalleryCard({ title, cover, id }) {
     console.log(title);
     window.location.href = `/logement?id=${id}`;
   };
+  
   return (
     <section className="gallery-card" onClick={dsq}>
       <img className="gallery-card__img" src={cover} alt={title} />
