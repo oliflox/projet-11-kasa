@@ -7,8 +7,7 @@ import { useLocation, Navigate } from "react-router-dom";
 
 export default function Logement() {
   const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
+  const id = location.state?.id;
   const logement = useLogement(id);
 
   if (!logement) return <Navigate to="/Error404" />;

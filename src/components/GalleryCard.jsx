@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 export default function GalleryCard({ title, cover, id }) {
+  const navigate = useNavigate();
   const dsq = () => {
     console.log(title);
-    window.location.href = `/logement?id=${id}`;
+    navigate(`/logement`, { state: { id } });
   };
   
   return (
