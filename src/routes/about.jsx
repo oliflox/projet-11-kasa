@@ -1,5 +1,4 @@
 import Banner from "../components/Banner";
-import Layout from "../components/Layout";
 import Collapse from "../components/Collapse";
 
 const INFORMATIONS = [
@@ -31,13 +30,13 @@ const INFORMATIONS = [
 
 export default function About() {
   return (
-    <Layout>
+    <>
       <Banner link="banner-background-about.jpg" title="" height="14rem" />
       <section className="about-collapse-container">
         {INFORMATIONS.map(({ id, title, description }) => (
           <Collapse key={id} title={title} children={description} />
         ))}
       </section>
-    </Layout>
+    </>
   );
 }

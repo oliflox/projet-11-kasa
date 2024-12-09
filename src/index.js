@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes';
 import reportWebVitals from './reportWebVitals';
+import Layout from './components/Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
-  return <RouterProvider router={router} />
+  return (
+    <Layout>
+      <RouterProvider router={router} />
+    </Layout>
+  );
 }
 
 root.render(
