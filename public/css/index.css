@@ -101,6 +101,8 @@
     gap: var(--spacing-xl);
 }
 
+.footer-logo {}
+
 .logement-tags__container {
     display: flex;
     gap: var(--spacing-md);
@@ -119,19 +121,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: var(--spacing-E404) 0 var(--spacing-E404) 0;
 }
 
 .E404-title {
     color: var(--primary);
     font-size: var(--E404-font-size);
     font-weight: var(--bold);
-    
+
 }
 
-.E404-description{
+.E404-description {
     color: var(--primary);
-    font-size: var(--font-size-semititle); 
+    font-size: var(--font-size-semititle);
+    font-weight: var(--lightbold);
+}
+
+.E404-button {
+    margin-top: var(--spacing-E404);
+    text-decoration: underline;
     font-weight: var(--lightbold);
 }
 
@@ -233,11 +241,11 @@
     position: absolute;
 }
 
-.prev{
+.prev {
     left: 10px;
 }
 
-.next{
+.next {
     right: 10px;
 }
 
@@ -246,4 +254,42 @@
     flex-direction: column;
     gap: var(--spacing-2xl);
     margin: var(--spacing-4xl) 0;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        margin: 0 var(--spacing-lg);
+    }
+
+    .header {
+        margin: var(--spacing-lg);
+    }
+
+    .header-logo {
+        width: 145px;
+    }
+
+    .header-nav {
+        gap: var(--spacing-xl);
+    }
+
+    .banner {
+        padding: var(--spacing-2xl) var(--spacing-md);
+        border-radius: var(--lightRadius);
+    }
+
+    .banner-title {
+        font-size: var(--font-size-subtitle);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: transparent;
+        padding: 0;
+        margin: var(--spacing-lg) 0;
+        gap: var(--spacing-lg);
+    }
+    .footer{
+        gap: var(--spacing-sm);
+    }
 }

@@ -1,10 +1,10 @@
-export default function Logo({ link, height, width }) {
+export default function Logo({ link, className }) {
   return (
     <a href="/">
       <img
         src={`${process.env.PUBLIC_URL}/img/${link}`}
         alt="Logo du site Kasa"
-        style={{ width: `${width}`, height: `${height}` }}
+        className={`${className}`}
       />
     </a>
   );
