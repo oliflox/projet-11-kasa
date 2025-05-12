@@ -107,19 +107,23 @@
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
-    margin-top: var(--spacing-lg); 
+    margin-top: var(--spacing-lg);
 }
 
 .logement-tags {
     background-color: var(--primary);
-    padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: var(--boldRadius);
+    padding: var(--spacing-xs) var(--spacing-xl);
+    border-radius: var(--lightRadius);
     color: var(--white);
     font-weight: var(--bold);
 }
 
-.stars-container{
-    margin-top: var(--spacing-lg); 
+.stars-container {
+    margin-top: var(--spacing-lg);
+}
+
+.stars {
+    font-size: 35px;
 }
 
 .E404-container {
@@ -332,5 +336,49 @@
         flex-direction: column;
         align-items: flex-start;
         margin-top: var(--spacing-lg);
+    }
+
+    .logement-location {
+        margin-top: var(--spacing-xs);
+    }
+
+    .logement-tags__container{
+        gap: var(--spacing-xs);
+    }
+
+    .logement-host {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: var(--spacing-md);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .host-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .host-name {
+        text-align: end;
+    }
+
+    .stars-container {
+        margin-top: 0;
+    }
+
+    .stars {
+        font-size: var(--spacing-xl);
+    }
+
+    .logement-collapse-container{
+        width: 100%;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .logement-collapse-container>.collapse {
+        width: 100%;
     }
 }

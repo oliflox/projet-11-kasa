@@ -4,10 +4,8 @@ export default function Stars({ rating }) {
       {[1, 2, 3, 4, 5].map((star) => {
         return (
           <span
-            className="stars"
-            style={{
+            className="stars"style={{
               color: rating >= star ? "var(--primary)" : "var(--lightgray)",
-              fontSize: `35px`,
             }}
           >
             {" "}
