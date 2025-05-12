@@ -1,14 +1,17 @@
+import LogementTags from "./LogementTags";
+import LogementHost from "./LogementHost";
 
-import HostProfile from "./HostProfile";
-
-export default function LogementHeader({ title, location, host }) {
+export default function LogementHeader({
+  title,
+  location,
+  host,
+  tags,
+  rating,
+}) {
   return (
     <section className="logement-details">
-      <div className="logement-header">
-        <h1 className="logement-title">{title}</h1>
-        <p className="logement-location">{location}</p>
-      </div>
-      <HostProfile host={host} />
+      <LogementTags title={title} location={location} tags={tags} />
+      <LogementHost host={host} rating={rating} />
     </section>
   );
 }
