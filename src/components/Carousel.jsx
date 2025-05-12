@@ -16,7 +16,7 @@ export default function Carousel({ logement }) {
 
   return (
     <div className="carousel-container">
-      <button id="btn-prev" onClick={showPrevItem} className="btn prev">
+      <button id="btn-prev" onClick={showPrevItem} className="carousel-button prev">
         <i className="fa-solid fa-angle-left"></i>
       </button>
       {logement.pictures.map((picture, index) => (
@@ -32,7 +32,7 @@ export default function Carousel({ logement }) {
           />
         </div>
       ))}
-      <button id="btn-next" onClick={showNextItem} className="btn next">
+      <button id="btn-next" onClick={showNextItem} className="carousel-button next">
         <i className="fa-solid fa-angle-right"></i> 
       </button>
     </div>

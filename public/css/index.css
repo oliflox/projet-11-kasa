@@ -233,7 +233,7 @@
     border-radius: var(--lightRadius);
 }
 
-.btn {
+.carousel-button {
     color: var(--white);
     background-color: transparent;
     font-size: var(--spacing-7xl);
@@ -277,7 +277,7 @@
     .banner {
         padding: var(--spacing-2xl) var(--spacing-md);
         border-radius: var(--lightRadius);
-        height:var(--banner-height-mobile);
+        height: var(--banner-height-mobile);
     }
 
     .banner-title {
@@ -292,6 +292,15 @@
         gap: var(--spacing-lg);
     }
 
+    .gallery-card {
+        aspect-ratio: initial;
+        height: var(--gallery-card-height-mobile);
+    }
+
+    .gallery-card__title {
+        font-size: var(--font-size);
+    }
+
     .footer {
         gap: var(--spacing-sm);
     }
@@ -301,7 +310,22 @@
         margin: var(--spacing-lg) 0;
     }
 
-    .collapse-button{
+    .collapse-button {
         font-size: var(--font-size);
+    }
+
+    .carousel-container {
+        height: var(--gallery-card-height-mobile);
+    }
+
+    .carousel-button {
+        font-size: var(--font-size-subtitle);
+    }
+
+    .logement-info,
+    .logement-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: var(--spacing-lg);
     }
 }
