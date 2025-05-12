@@ -4,7 +4,7 @@ export default function Stars({ rating }) {
       {[1, 2, 3, 4, 5].map((star) => {
         return (
           <span
-            key={star} 
+            key={star}
             className="stars"
             style={{
               color: rating >= star ? "var(--primary)" : "var(--lightgray)",

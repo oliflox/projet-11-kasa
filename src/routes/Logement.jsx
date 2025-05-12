@@ -21,7 +21,10 @@ export default function Logement() {
         tags={logement.tags}
         rating={logement.rating}
       />
-      <LogementCollapse description={logement.description} equipments={logement.equipments} />
+      <LogementCollapse
+        description={logement.description}
+        equipments={logement.equipments}
+      />
     </>
   );
 }

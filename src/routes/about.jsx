@@ -31,7 +31,11 @@ const INFORMATIONS = [
 export default function About() {
   return (
     <>
-      <Banner link="banner-background-about.jpg" title="" className="about-banner" />
+      <Banner
+        link="banner-background-about.jpg"
+        title=""
+        className="about-banner"
+      />
       <section className="about-collapse-container">
         {INFORMATIONS.map(({ id, title, description }) => (
           <Collapse key={id} title={title} children={description} />
