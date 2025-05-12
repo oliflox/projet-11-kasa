@@ -16,9 +16,8 @@
 }
 
 .banner {
-
     border-radius: var(--boldRadius);
-    background-image: url('../img/banner-background.jpg');
+    height: var(--banner-height);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +45,9 @@
     font-weight: var(--bold);
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .gallery {
@@ -101,8 +103,6 @@
     gap: var(--spacing-xl);
 }
 
-.footer-logo {}
-
 .logement-tags__container {
     display: flex;
     gap: var(--spacing-md);
@@ -153,6 +153,7 @@
     font-weight: var(--bold);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: var(--lightRadius);
     padding: var(--spacing-sm) var(--spacing-md);
 }
@@ -276,6 +277,7 @@
     .banner {
         padding: var(--spacing-2xl) var(--spacing-md);
         border-radius: var(--lightRadius);
+        height:var(--banner-height-mobile);
     }
 
     .banner-title {
@@ -289,7 +291,17 @@
         margin: var(--spacing-lg) 0;
         gap: var(--spacing-lg);
     }
-    .footer{
+
+    .footer {
         gap: var(--spacing-sm);
+    }
+
+    .about-collapse-container {
+        gap: var(--spacing-lg);
+        margin: var(--spacing-lg) 0;
+    }
+
+    .collapse-button{
+        font-size: var(--font-size);
     }
 }

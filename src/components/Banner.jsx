@@ -1,8 +1,8 @@
-export default function Banner({ link, title, height }) {
+export default function Banner({ link, title, className }) {
   return (
     <section
-      className="banner"
-      style={{ backgroundImage: `url('../img/${link}')`, height: height }}
+      className={`banner ${className}`}
+      style={{ backgroundImage: `url('../img/${link}')` }}
     >
       <h1 className="banner-title">{title}</h1>
     </section>
