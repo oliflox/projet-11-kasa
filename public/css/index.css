@@ -107,6 +107,7 @@
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
+    margin-top: var(--spacing-lg); 
 }
 
 .logement-tags {
@@ -115,6 +116,10 @@
     border-radius: var(--boldRadius);
     color: var(--white);
     font-weight: var(--bold);
+}
+
+.stars-container{
+    margin-top: var(--spacing-lg); 
 }
 
 .E404-container {

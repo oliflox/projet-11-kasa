@@ -1,6 +1,6 @@
 export default function Stars({ rating }) {
   return (
-    <div>
+    <div className="stars-container">
       {[1, 2, 3, 4, 5].map((star) => {
         return (
           <span
