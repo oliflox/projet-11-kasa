@@ -120,6 +120,7 @@
 
 .stars-container {
     margin-top: var(--spacing-lg);
+    text-align:end;
 }
 
 .stars {
