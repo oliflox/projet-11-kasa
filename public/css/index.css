@@ -120,7 +120,7 @@
 
 .stars-container {
     margin-top: var(--spacing-lg);
-    text-align:end;
+    text-align: end;
 }
 
 .stars {
@@ -145,6 +145,8 @@
     color: var(--primary);
     font-size: var(--font-size-semititle);
     font-weight: var(--lightbold);
+    text-align: center;
+    margin-top: var(--spacing-E404);
 }
 
 .E404-button {
@@ -267,7 +269,7 @@
     margin: var(--spacing-4xl) 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     main {
         margin: 0 var(--spacing-lg);
     }
@@ -343,7 +345,7 @@
         margin-top: var(--spacing-xs);
     }
 
-    .logement-tags__container{
+    .logement-tags__container {
         gap: var(--spacing-xs);
     }
 
@@ -373,7 +375,7 @@
         font-size: var(--spacing-xl);
     }
 
-    .logement-collapse-container{
+    .logement-collapse-container {
         width: 100%;
         flex-direction: column;
         gap: var(--spacing-lg);
@@ -381,5 +383,18 @@
 
     .logement-collapse-container>.collapse {
         width: 100%;
+    }
+
+    .E404-title {
+        font-size: 96px;
+    }
+
+    .E404-description {
+        font-size: var(--font-size);
+    }
+
+    .E404-description,
+    .E404-button {
+        margin-top: var(--spacing-E404-mobile);
     }
 }

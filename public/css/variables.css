@@ -42,7 +42,11 @@
     --spacing-8xl: 5rem;
 
     --spacing-body: 100px;
+
     --spacing-E404: 150px;
+    --spacing-E404-mobile: 100px;
+
+
     --spacing-collapse: 200px;
 
     --banner-height: 14rem;
