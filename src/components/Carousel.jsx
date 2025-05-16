@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Carousel({ logement }) {
   const [currentItem, setCurrentItem] = useState(0);
+  const hasMultiple = logement.pictures.length > 1;
 
   const showNextItem = () => {
     setCurrentItem((prevItem) => (prevItem + 1) % logement.pictures.length);
@@ -16,13 +17,15 @@ export default function Carousel({ logement }) {
 
   return (
     <div className="carousel-container">
-      <button
-        id="btn-prev"
-        onClick={showPrevItem}
-        className="carousel-button prev"
-      >
-        <i className="fa-solid fa-angle-left"></i>
-      </button>
+      {hasMultiple && (
+        <button
+          id="btn-prev"
+          onClick={showPrevItem}
+          className="carousel-button prev"
+        >
+          <i className="fa-solid fa-angle-left"></i>
+        </button>
+      )}
       {logement.pictures.map((picture, index) => (
         <div
           key={index}
@@ -36,13 +39,20 @@ export default function Carousel({ logement }) {
           />
         </div>
       ))}
-      <button
-        id="btn-next"
-        onClick={showNextItem}
-        className="carousel-button next"
-      >
-        <i className="fa-solid fa-angle-right"></i>
-      </button>
+      {hasMultiple && (
+        <div className="carousel-counter">
+          {currentItem + 1} / {logement.pictures.length}
+        </div>
+      )}
+      {hasMultiple && (
+        <button
+          id="btn-next"
+          onClick={showNextItem}
+          className="carousel-button next"
+        >
+          <i className="fa-solid fa-angle-right"></i>
+        </button>
+      )}
     </div>
   );
 }

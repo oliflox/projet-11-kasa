@@ -254,6 +254,16 @@
     position: absolute;
 }
 
+.carousel-counter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
 .prev {
     left: 10px;
 }

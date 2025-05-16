@@ -1,4 +1,3 @@
-// routes.js
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Index from './routes/index';
